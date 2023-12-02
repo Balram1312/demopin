@@ -1,0 +1,344 @@
+{
+    "JourneysResponse": {
+        "Item": [
+            {
+                "Activities": {
+                    "Z1nTEBFY7b": {
+                        "EMAIL": {
+                            "NextActivity": "oeGaWolnRO",
+                            "TemplateName": "Initital"
+                        }
+                    },
+                    "oeGaWolnRO": {
+                        "ConditionalSplit": {
+                            "Condition": {
+                                "Conditions": [
+                                    {
+                                        "EventCondition": {
+                                            "Dimensions": {
+                                                "Attributes": {},
+                                                "EventType": {
+                                                    "DimensionType": "INCLUSIVE",
+                                                    "Values": [
+                                                        "_email.open"
+                                                    ]
+                                                },
+                                                "Metrics": {}
+                                            },
+                                            "MessageActivity": "Z1nTEBFY7b"
+                                        }
+                                    }
+                                ],
+                                "Operator": "ANY"
+                            },
+                            "EvaluationWaitTime": {
+                                "WaitFor": "PT1H"
+                            },
+                            "FalseActivity": "j84vISyTnV",
+                            "TrueActivity": "pg1jOCEuBD"
+                        }
+                    },
+                    "pg1jOCEuBD": {
+                        "Wait": {
+                            "NextActivity": "3o15lLLFPr",
+                            "WaitTime": {
+                                "WaitFor": "PT1H"
+                            }
+                        }
+                    },
+                    "j84vISyTnV": {
+                        "Wait": {
+                            "NextActivity": "xa3ruYSybY",
+                            "WaitTime": {
+                                "WaitFor": "PT1H"
+                            }
+                        }
+                    },
+                    "3o15lLLFPr": {
+                        "EMAIL": {
+                            "TemplateName": "tes_temp"
+                        }
+                    },
+                    "xa3ruYSybY": {
+                        "EMAIL": {
+                            "TemplateName": "no"
+                        }
+                    }
+                },
+                "ApplicationId": "9f395331492b4f05be1ba9de88398aa3",
+                "CreationDate": "2023-12-01T15:42:55.123Z",
+                "Id": "d7f94b0fe8a340658cd1c869a19d05a1",
+                "LastModifiedDate": "2023-12-01T15:52:12.433Z",
+                "LocalTime": false,
+                "Name": "Untitled",
+                "Schedule": {
+                    "EndTime": "2033-10-09T15:52:11+00:00",
+                    "StartTime": "2023-12-01T15:57:11+00:00",
+                    "Timezone": "UTC"
+                },
+                "StartActivity": "Z1nTEBFY7b",
+                "StartCondition": {
+                    "EventStartCondition": {
+                        "EventFilter": {
+                            "Dimensions": {
+                                "Attributes": {},
+                                "EventType": {
+                                    "DimensionType": "INCLUSIVE",
+                                    "Values": [
+                                        "ButtonClickEvent"
+                                    ]
+                                },
+                                "Metrics": {}
+                            },
+                            "FilterType": "ENDPOINT"
+                        }
+                    }
+                },
+                "State": "CANCELLED",
+                "RefreshOnSegmentUpdate": false,
+                "SendingSchedule": false,
+                "TimezoneEstimationMethods": []
+            },
+            {
+                "Activities": {
+                    "Z1nTEBFY7b": {
+                        "EMAIL": {
+                            "MessageConfig": {
+                                "FromAddress": "doyaneb422@nasmis.com"
+                            },
+                            "NextActivity": "oeGaWolnRO",
+                            "TemplateName": "Initital"
+                        }
+                    },
+                    "oeGaWolnRO": {
+                        "ConditionalSplit": {
+                            "Condition": {
+                                "Conditions": [
+                                    {
+                                        "EventCondition": {
+                                            "Dimensions": {
+                                                "Attributes": {},
+                                                "EventType": {
+                                                    "DimensionType": "INCLUSIVE",
+                                                    "Values": [
+                                                        "_email.open"
+                                                    ]
+                                                },
+                                                "Metrics": {}
+                                            },
+                                            "MessageActivity": "Z1nTEBFY7b"
+                                        }
+                                    }
+                                ],
+                                "Operator": "ANY"
+                            },
+                            "EvaluationWaitTime": {
+                                "WaitFor": "PT1H"
+                            },
+                            "FalseActivity": "j84vISyTnV",
+                            "TrueActivity": "pg1jOCEuBD"
+                        }
+                    },
+                    "pg1jOCEuBD": {
+                        "Wait": {
+                            "NextActivity": "3o15lLLFPr",
+                            "WaitTime": {
+                                "WaitFor": "PT1H"
+                            }
+                        }
+                    },
+                    "j84vISyTnV": {
+                        "Wait": {
+                            "NextActivity": "xa3ruYSybY",
+                            "WaitTime": {
+                                "WaitFor": "PT1H"
+                            }
+                        }
+                    },
+                    "3o15lLLFPr": {
+                        "EMAIL": {
+                            "MessageConfig": {
+                                "FromAddress": "doyaneb422@nasmis.com"
+                            },
+                            "TemplateName": "tes_temp"
+                        }
+                    },
+                    "xa3ruYSybY": {
+                        "EMAIL": {
+                            "MessageConfig": {
+                                "FromAddress": "doyaneb422@nasmis.com"
+                            },
+                            "TemplateName": "no"
+                        }
+                    }
+                },
+                "ApplicationId": "9f395331492b4f05be1ba9de88398aa3",
+                "CreationDate": "2023-12-01T16:02:25.467Z",
+                "Id": "c2fde65dc6e64aff9d13ff266aebcd86",
+                "LastModifiedDate": "2023-12-01T16:05:44.669Z",
+                "Limits": {
+                    "EndpointReentryInterval": "P1D",
+                    "TimeframeCap": {
+                        "Cap": 0,
+                        "Days": 1
+                    }
+                },
+                "LocalTime": false,
+                "Name": "Copy-Untitled",
+                "Schedule": {
+                    "EndTime": "2023-12-09T15:52:00+00:00",
+                    "StartTime": "2023-12-01T21:37:00+00:00",
+                    "Timezone": "UTC"
+                },
+                "StartActivity": "Z1nTEBFY7b",
+                "StartCondition": {
+                    "EventStartCondition": {
+                        "EventFilter": {
+                            "Dimensions": {
+                                "Attributes": {},
+                                "EventType": {
+                                    "DimensionType": "INCLUSIVE",
+                                    "Values": [
+                                        "ButtonClickEvent"
+                                    ]
+                                },
+                                "Metrics": {}
+                            },
+                            "FilterType": "ENDPOINT"
+                        }
+                    }
+                },
+                "State": "CANCELLED",
+                "RefreshOnSegmentUpdate": false,
+                "SendingSchedule": false,
+                "TimezoneEstimationMethods": []
+            },
+            {
+                "Activities": {
+                    "Z1nTEBFY7b": {
+                        "EMAIL": {
+                            "MessageConfig": {
+                                "FromAddress": "doyaneb422@nasmis.com"
+                            },
+                            "NextActivity": "oeGaWolnRO",
+                            "TemplateName": "Initital"
+                        }
+                    },
+                    "oeGaWolnRO": {
+                        "ConditionalSplit": {
+                            "Condition": {
+                                "Conditions": [
+                                    {
+                                        "EventCondition": {
+                                            "Dimensions": {
+                                                "Attributes": {},
+                                                "EventType": {
+                                                    "DimensionType": "INCLUSIVE",
+                                                    "Values": [
+                                                        "_email.open"
+                                                    ]
+                                                },
+                                                "Metrics": {}
+                                            },
+                                            "MessageActivity": "Z1nTEBFY7b"
+                                        }
+                                    }
+                                ],
+                                "Operator": "ANY"
+                            },
+                            "EvaluationWaitTime": {
+                                "WaitFor": "PT1H"
+                            },
+                            "FalseActivity": "j84vISyTnV",
+                            "TrueActivity": "pg1jOCEuBD"
+                        }
+                    },
+                    "pg1jOCEuBD": {
+                        "Wait": {
+                            "NextActivity": "3o15lLLFPr",
+                            "WaitTime": {
+                                "WaitFor": "PT1H"
+                            }
+                        }
+                    },
+                    "j84vISyTnV": {
+                        "Wait": {
+                            "NextActivity": "xa3ruYSybY",
+                            "WaitTime": {
+                                "WaitFor": "PT1H"
+                            }
+                        }
+                    },
+                    "3o15lLLFPr": {
+                        "EMAIL": {
+                            "MessageConfig": {
+                                "FromAddress": "doyaneb422@nasmis.com"
+                            },
+                            "TemplateName": "tes_temp"
+                        }
+                    },
+                    "xa3ruYSybY": {
+                        "EMAIL": {
+                            "MessageConfig": {
+                                "FromAddress": "doyaneb422@nasmis.com"
+                            },
+                            "TemplateName": "no"
+                        }
+                    }
+                },
+                "ApplicationId": "9f395331492b4f05be1ba9de88398aa3",
+                "CreationDate": "2023-12-01T16:06:14.922Z",
+                "Id": "5770ad7fc6774ee19715b69472b91917",
+                "LastModifiedDate": "2023-12-01T16:08:13.726Z",
+                "Limits": {
+                    "EndpointReentryInterval": "P1D",
+                    "TimeframeCap": {
+                        "Cap": 0,
+                        "Days": 1
+                    }
+                },
+                "LocalTime": false,
+                "Name": "demo_journey",
+                "Schedule": {
+                    "EndTime": "2033-10-09T21:38:13+05:30",
+                    "StartTime": "2023-12-01T21:43:13+05:30",
+                    "Timezone": "UTC+05:30"
+                },
+                "StartActivity": "Z1nTEBFY7b",
+                "StartCondition": {
+                    "EventStartCondition": {
+                        "EventFilter": {
+                            "Dimensions": {
+                                "Attributes": {},
+                                "EventType": {
+                                    "DimensionType": "INCLUSIVE",
+                                    "Values": [
+                                        "ButtonClickEvent"
+                                    ]
+                                },
+                                "Metrics": {}
+                            },
+                            "FilterType": "ENDPOINT"
+                        }
+                    }
+                },
+                "State": "ACTIVE",
+                "RefreshOnSegmentUpdate": false,
+                "SendingSchedule": false,
+                "TimezoneEstimationMethods": []
+            },
+            {
+                "ApplicationId": "9f395331492b4f05be1ba9de88398aa3",
+                "CreationDate": "2023-12-01T16:06:05.378Z",
+                "Id": "2df16e1273a3416b950e1217c452c508",
+                "LastModifiedDate": "2023-12-01T16:06:05.378Z",
+                "Name": "Untitled",
+                "Schedule": {
+                    "Timezone": "UTC"
+                },
+                "State": "DRAFT",
+                "RefreshOnSegmentUpdate": false
+            }
+        ]
+    }
+}

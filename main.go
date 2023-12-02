@@ -12,7 +12,6 @@ func main() {
 	r := gin.Default()
 	r.Use(cors.Default())
 	r.POST("/send-email", feature.SendEmail)
-
 	if err := r.Run(":8080"); err != nil {
 		log.Fatal(err)
 	}
